@@ -1,0 +1,19 @@
+// Build docker
+docker build .  // Successfully built *******
+// Run docker build -p 5555:5555 open port in container
+docker run -p 3000:5555 <YOUR_BUILD_NAME>
+
+// List of containers -a all existed images
+docker ps -a
+// Remove container
+docker rm <YOUR_CONTAINER_NAME_OR_ID>
+
+// List of images
+docker images -a
+// Remove image
+docker rmi <YOUR_IMAGE_NAME_OR_ID>
+
+// Remove all unlinked with containers images
+docker system prune
+// Remove all unused with containers images
+docker system prune -a
